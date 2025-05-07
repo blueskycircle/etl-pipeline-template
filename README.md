@@ -98,7 +98,7 @@ erDiagram
 
 Before running the Python pipeline, you need to create the necessary database tables using the `schema.sql` file.
 
-**Prerequisite:** Ensure you have MySQL installed and running, and that you have created the target database (e.g., `weather`).
+**Prerequisite:** Ensure you have MySQL installed and running, and that you have created the target database (e.g. `weather`).
 
 You can execute the schema setup script in two ways:
 
@@ -114,9 +114,9 @@ This is the recommended way for initial setup.
     mysql -h <your_host> -u <your_user> -p <your_database_name> < database/schema.sql
     ```
 
-    *   `<your_host>`: Hostname or IP address of your MySQL server (e.g., `localhost`).
-    *   `<your_user>`: Your MySQL username (e.g., `george`).
-    *   `<your_database_name>`: The name of the database you created (e.g., `weather`).
+    *   `<your_host>`: Hostname or IP address of your MySQL server (e.g. `localhost`).
+    *   `<your_user>`: Your MySQL username.
+    *   `<your_database_name>`: The name of the database you created (e.g. `weather`).
     *   `-p`: This flag will prompt you to enter the password securely.
     *   `< database/schema.sql`: This redirects the content of the schema file into the `mysql` command.
 

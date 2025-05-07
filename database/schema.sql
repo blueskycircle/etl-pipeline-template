@@ -5,16 +5,16 @@ CREATE TABLE weather_staging (
     staging_id BIGINT AUTO_INCREMENT PRIMARY KEY, -- Use BIGINT AUTO_INCREMENT for MySQL primary key
     snapshot_id BIGINT NOT NULL,                -- Identifier for the specific ETL run/batch/snapshot
     city_name VARCHAR(100),                     -- Name of the city for the weather observation
-    country_code VARCHAR(10),                   -- Country code (e.g., 'GB', 'US')
+    country_code VARCHAR(10),                   -- Country code (e.g. 'GB', 'US')
     observation_timestamp TIMESTAMP NULL,       -- Use TIMESTAMP for MySQL (handles UTC conversion)
     temperature_celsius REAL,                   -- Temperature in Celsius
     feels_like_celsius REAL,                    -- "Feels like" temperature in Celsius
     humidity_percent INTEGER,                   -- Humidity percentage (0-100)
     pressure_hpa INTEGER,                       -- Atmospheric pressure in hectopascals
     wind_speed_mps REAL,                        -- Wind speed in meters per second
-    weather_main VARCHAR(50),                   -- Short description (e.g., 'Clouds', 'Rain')
-    weather_description VARCHAR(100),           -- More detailed description (e.g., 'broken clouds')
-    api_response_json JSON,                     -- Use JSON type for MySQL (requires MySQL 5.7.8+)
+    weather_main VARCHAR(50),                   -- Short description (e.g. 'Clouds', 'Rain')
+    weather_description VARCHAR(100),           -- More detailed description (e.g. 'broken clouds')
+    api_response_json JSON,                     -- Use JSON type for MySQL
     fetched_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp when the record was fetched
 );
 
