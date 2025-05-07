@@ -33,9 +33,6 @@ The database consists of three main tables designed to manage the ETL process an
 
 ### Entity-Relationship Diagram
 
-![Entity-Relationship Diagram](./assets/mermaid-er-diagram.png)
-
-
 ```mermaid
 erDiagram
     WEATHER_STAGING ||--o{ DATA_QUALITY_LOG : "logs issues for"
