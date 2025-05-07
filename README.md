@@ -5,7 +5,7 @@ This project implements an ETL pipeline to fetch data from an API (OpenWeatherMa
 ## Table of Contents
 - [Data Quality Pipeline Project](#data-quality-pipeline-project)
 - [Database Schema and Relationships](#database-schema-and-relationships)
-  - [Entity-Relationship Diagram (Conceptual)](#entity-relationship-diagram-conceptual)
+  - [Entity-Relationship Diagram](#entity-relationship-diagram)
 - [Database Setup (MySQL)](#database-setup-mysql)
 - [Running the Pipeline](#running-the-pipeline)
   - [Prerequisites](#prerequisites)
