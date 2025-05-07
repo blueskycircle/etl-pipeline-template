@@ -1,6 +1,6 @@
 # Data Quality Pipeline Project
 
-This project implements an ETL pipeline to fetch data from an API (e.g. OpenWeatherMap), perform data quality checks using SQL, and load cleansed data into a database.
+This project implements an ETL pipeline to fetch data from an API (OpenWeatherMap), perform data quality checks using SQL, load problem data into a table for inspection and load clean data into a different table for use in analysis.
 
 ## Table of Contents
 - [Data Quality Pipeline Project](#data-quality-pipeline-project)
@@ -19,7 +19,7 @@ This project implements an ETL pipeline to fetch data from an API (e.g. OpenWeat
 The database consists of three main tables designed to manage the ETL process and data quality checks:
 
 1.  **`weather_staging`**:
-    *   **Purpose**: This table acts as a temporary holding area for raw data fetched directly from the OpenWeatherMap API during each pipeline run. Each run is identified by a `snapshot_id`.
+    *   **Purpose**: This table acts as a holding area for raw data fetched directly from the OpenWeatherMap API during each pipeline run. Each run is identified by a `snapshot_id`.
     *   **Key Columns**: `staging_id` (PK), `snapshot_id`, `city_name`, `observation_timestamp`, `temperature_celsius`, `api_response_json`, `fetched_timestamp`.
 
 2.  **`data_quality_log`**:
