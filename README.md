@@ -1,4 +1,4 @@
-# Data Quality Pipeline Project
+# Data Quality Pipeline Template
 
 This project template implements an ETL pipeline to fetch data from an API (OpenWeatherMap), perform data quality checks using SQL, load problem data into a table for inspection and load clean data into a different table for use in analysis. It forms a template for projects that need this functionality.
 
