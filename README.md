@@ -154,14 +154,6 @@ You can also run the script after connecting to MySQL manually.
     ```sql
     source path/to/your/project/database/schema.sql;
     ```
-    **Example (assuming your command prompt is open in `s:\Learning\property`):**
-    ```sql
-    source database/schema.sql;
-    ```
-    **Example (using absolute path):**
-    ```sql
-    source s:/Learning/property/database/schema.sql;
-    ```
 
 This will execute the SQL commands within the file against the selected database (`weather`).
 
@@ -198,6 +190,8 @@ Before running the pipeline, ensure the following:
 
 ### Running the Pipeline
 To run the pipeline, execute the `main.py` script. This script orchestrates the ETL process by calling the `extract` and `transform_load` modules.
+
+![ETL Pipeline Demo](./assets/run-etl-demo.gif)
 
 1. Open a terminal or command prompt.
 2. Run the pipeline:
