@@ -50,9 +50,3 @@ CREATE TABLE data_quality_log (
     issue_description TEXT,                     -- A brief description of the quality issue
     log_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Timestamp when the quality issue was logged
 );
-
--- Optional: Add indexes to staging table columns frequently used in WHERE clauses or JOINs
-CREATE INDEX idx_staging_snapshot_id ON weather_staging (snapshot_id);
-CREATE INDEX idx_staging_city_obs_time ON weather_staging (city_name, observation_timestamp);
-CREATE INDEX idx_staging_fetched_time ON weather_staging (fetched_timestamp);
-CREATE INDEX idx_log_snapshot_id ON data_quality_log (snapshot_id);
